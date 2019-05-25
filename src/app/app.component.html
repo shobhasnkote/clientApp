@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Shobha
+  </h1>
+   <input type="text" (keyup)="onNameKeyUp($event)">
+   <button (click)="getProfile()">Get Profile</button>
+</div>
+<br>
+
+<router-outlet></router-outlet>
+
+<!-- <div *ngIf="empData">
+     <ul>
+      <li *ngFor="let card of empData">
+         <span>{{card.firstName}}</span>
+         <span>{{card.id}}</span>
+         <span>{{card.lastName}}</span>
+         <span>{{card.salary}}</span> 
+         <span>{{card}}</span>
+      </li>
+    </ul> -->
+     
+    </div>
+    
+    <div ng-repeat="series in empData">
+            <li>                  
+                <div>{{series}}</div>
+            </li>            
+        </ul>
+    </div>
