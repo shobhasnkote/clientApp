@@ -10,7 +10,7 @@
 
 <router-outlet></router-outlet>
 
-<div *ngIf="empData">
+<!-- <div *ngIf="empData">
      <ul>
       <li *ngFor="let card of empData">
          <span>{{card.firstName}}</span>
@@ -21,11 +21,9 @@
       </li>
     </ul> 
      
-    </div>
-    <div>
-      <select>
-        <option *ngFor= "let card of empData " >{{card.firstName}}</option>
-      </select>
-    </div>
+    </div> -->
+    <div *ngFor= "let card of empData1">
+          <span>{{card.givenName}}</span>
+    </div> 
     
   
